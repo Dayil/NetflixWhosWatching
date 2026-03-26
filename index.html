@@ -1,28 +1,54 @@
 <!DOCTYPE html>
+<!-- Esta é a declaração do tipo de documento. É como dizer "Oi, eu sou uma página da web!" -->
 <html lang="pt-br">
+<!-- Aqui começa a página da web. O "lang" diz que está em português do Brasil. -->
 <head>
+    <!-- Esta parte é a cabeça da página, onde colocamos informações importantes que o navegador precisa saber. -->
     <meta charset="UTF-8">
+    <!-- Este meta diz qual tipo de letras usar, como UTF-8 para letras especiais. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Este meta faz a página funcionar bem em telefones e computadores. -->
     <title>Netflix</title>
+    <!-- Este é o título da página que aparece na aba do navegador. -->
+     <link rel="stylesheet" href="style.css">
+     <!-- Este link conecta a página com um arquivo de estilos, como vestir a página com roupas bonitas. -->
 </head>
 <body>
+    <!-- Aqui é o corpo da página, onde tudo que você vê fica. -->
     <main>
+        <!-- Esta é a parte principal da página, como o coração da história. -->
         <h1>Quem está assistindo?</h1>
-        <div class="profiles">
-            <div class="profile">
-                <img src="/assets/perfil1.png" alt="Perfil 1">
-                <p>Perfil 1</p>
-            </div>
-            <div class="profile">
-                <img src="/assets/perfil2.png" alt="Perfil 2">
-                <p>Perfil 2</p>
-            </div>
-            <div class="profile">
-                <img src="/assets/perfil3.png" alt="Perfil 3">
-                <p>Perfil 3</p>
-            </div>
-
-        </div>
+        <!-- Este é o título grande, perguntando quem vai assistir. -->
+        <section aria-label="Perfis disponíveis">
+            <!-- Esta seção tem todos os perfis, como uma família de opções. -->
+            <nav class="profiles">
+                <!-- Esta navegação ajuda a escolher perfis, como um menu. -->
+                <a href="#" class="profile">
+                    <!-- Este link é para o primeiro perfil, como clicar em uma pessoa. -->
+                    <figure>
+                        <!-- Esta figura mostra a imagem e o nome juntos, como uma foto com legenda. -->
+                        <img src="/assets/perfil1.png" alt="Imagem de perfil">
+                        <!-- Esta é a imagem do perfil, como uma foto. -->
+                        <figcaption>Larissa</figcaption>
+                        <!-- Este é o nome da pessoa no perfil. -->
+                    </figure>
+                </a>
+                <a href="#" class="profile">
+                    <!-- Outro link para outro perfil. -->
+                    <figure>
+                        <img src="/assets/perfil2.png" alt="Imagem de perfil">
+                        <figcaption>Eduarda</figcaption>
+                    </figure>
+                </a>
+                <a href="#" class="profile">
+                    <!-- Mais um link para mais um perfil. -->
+                    <figure>
+                        <img src="/assets/perfil3.png" alt="Imagem de perfil">
+                        <figcaption>Daniel</figcaption>
+                    </figure>
+                </a>
+            </nav>
+        </section>
     </main>
 </body>
 </html>
