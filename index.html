@@ -1,54 +1,96 @@
-<!DOCTYPE html>
-<!-- Esta é a declaração do tipo de documento. É como dizer "Oi, eu sou uma página da web!" -->
-<html lang="pt-br">
-<!-- Aqui começa a página da web. O "lang" diz que está em português do Brasil. -->
+<!doctype html>
+<html lang="pt-BR">
+
 <head>
-    <!-- Esta parte é a cabeça da página, onde colocamos informações importantes que o navegador precisa saber. -->
-    <meta charset="UTF-8">
-    <!-- Este meta diz qual tipo de letras usar, como UTF-8 para letras especiais. -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Este meta faz a página funcionar bem em telefones e computadores. -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Netflix</title>
-    <!-- Este é o título da página que aparece na aba do navegador. -->
-     <link rel="stylesheet" href="style.css">
-     <!-- Este link conecta a página com um arquivo de estilos, como vestir a página com roupas bonitas. -->
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- Aqui é o corpo da página, onde tudo que você vê fica. -->
-    <main>
-        <!-- Esta é a parte principal da página, como o coração da história. -->
+    <main class="conteudo-principal">
         <h1>Quem está assistindo?</h1>
-        <!-- Este é o título grande, perguntando quem vai assistir. -->
-        <section aria-label="Perfis disponíveis">
-            <!-- Esta seção tem todos os perfis, como uma família de opções. -->
-            <nav class="profiles">
-                <!-- Esta navegação ajuda a escolher perfis, como um menu. -->
-                <a href="#" class="profile">
-                    <!-- Este link é para o primeiro perfil, como clicar em uma pessoa. -->
-                    <figure>
-                        <!-- Esta figura mostra a imagem e o nome juntos, como uma foto com legenda. -->
-                        <img src="/assets/perfil1.png" alt="Imagem de perfil">
-                        <!-- Esta é a imagem do perfil, como uma foto. -->
-                        <figcaption>Larissa</figcaption>
-                        <!-- Este é o nome da pessoa no perfil. -->
+        <ul class="lista-perfis">
+            <!-- perfil 1 -->
+            <li class="item-perfil">
+                <a href="catalogo/catalogo.html" class="perfil">
+                    <figure class="avatar-container">
+                        <span class="imagem-perfil tema-cris" aria-hidden="true">
+                            <span class="icone-avatar">
+                                <img src="assets/perfil1.png" alt="Perfil de Dan" width="128" height="128">
+                            </span>
+                        </span>
+                        <figcaption class="nome-perfil">Dan</figcaption>
                     </figure>
                 </a>
-                <a href="#" class="profile">
-                    <!-- Outro link para outro perfil. -->
-                    <figure>
-                        <img src="/assets/perfil2.png" alt="Imagem de perfil">
-                        <figcaption>Eduarda</figcaption>
+            </li>
+
+            <!-- perfil 2 -->
+            <li class="item-perfil">
+                <a href="catalogo/catalogo.html" class="perfil">
+                    <figure class="avatar-container">
+                        <span class="imagem-perfil tema-cris" aria-hidden="true">
+                            <span class="icone-avatar">
+                                <img src="assets/perfil2.png" alt="Perfil de Morgana" width="128" height="128">
+                            </span>
+                        </span>
+                        <figcaption class="nome-perfil">Morgana</figcaption>
                     </figure>
                 </a>
-                <a href="#" class="profile">
-                    <!-- Mais um link para mais um perfil. -->
-                    <figure>
-                        <img src="/assets/perfil3.png" alt="Imagem de perfil">
-                        <figcaption>Daniel</figcaption>
+            </li>
+
+            <!-- perfil 3 -->
+            <li class="item-perfil">
+                <a href="catalogo/catalogo.html" class="perfil">
+                    <figure class="avatar-container">
+                        <span class="imagem-perfil tema-cris" aria-hidden="true">
+                            <span class="icone-avatar">
+                                <img src="assets/perfil3.png" alt="Perfil de Yasmin" width="128" height="128">
+                            </span>
+                        </span>
+                        <figcaption class="nome-perfil">Yasmin</figcaption>
                     </figure>
                 </a>
-            </nav>
+            </li>
+
+            <!-- perfil 4 -->
+            <li class="item-perfil">
+                <a href="catalogo/catalogo.html" class="perfil">
+                    <figure class="avatar-container">
+                        <span class="imagem-perfil tema-cris" aria-hidden="true">
+                            <span class="icone-avatar">
+                                <img src="assets/perfil4.png" alt="Perfil de Hana" width="128" height="128">
+                            </span>
+                        </span>
+                        <figcaption class="nome-perfil">Hana</figcaption>
+                    </figure>
+                </a>
+            </li>
+
+                <!-- perfil 5 -->
+                <li class="item-perfil">
+                    <a href="catalogo/catalogo.html" class="perfil">
+                        <figure class="avatar-container">
+                            <span class="imagem-perfil tema-cris" aria-hidden="true">
+                                <span class="icone-avatar">
+                                    <img src="assets/perfil5.png" alt="Perfil de Leandro" width="128" height="128">
+                                </span>
+                            </span>
+                            <figcaption class="nome-perfil">Leandro</figcaption>
+                        </figure>
+                    </a>
+                </li>
+        </ul>
+
+        <section class="gerenciar">
+            <button type="button" class="botao-gerenciar">Gerenciar perfis</button>
         </section>
+
     </main>
+
+    <script src="js/index.js"></script>
 </body>
+
 </html>
